@@ -1,0 +1,32 @@
+appConfig:
+  app:
+    baseUrl: 'https://backstage.akitlabs.com'
+    title: Backstage
+  backend:
+    baseUrl: 'https://backstage.akitlabs.com'
+    cors:
+      origin: 'https://backstage.akitlabs.com'
+  lighthouse:
+      baseUrl: 'https://backstage.akitlabs.com/lighthouse-api'
+  techdocs:
+    storageUrl: 'https://backstage.akitlabs.com/api/techdocs/static/docs'
+    requestUrl: 'https://backstage.akitlabs.com/api/techdocs'
+
+issuer:
+  email:
+  clusterIssuer: 'selfsigned-cluster-issuer'
+
+auth:
+  githubToken:
+
+
+frontend:
+  enabled: true
+  image:
+    repository: januszkujawa84/backstage-frontend
+    tag: '0.1'
+
+backend:
+  image:
+    repository: januszkujawa84/backstage-backend
+    tag: '0.1'
