@@ -16,8 +16,8 @@ issuer:
   email:
   clusterIssuer: 'selfsigned-cluster-issuer'
 
-auth:
-  githubToken:
+#auth:
+#  githubToken:
 
 
 frontend:
