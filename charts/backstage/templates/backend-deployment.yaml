@@ -54,7 +54,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: {{ include "backend.postgresql.passwordSecret" .}}
-                  key: postgresql-password
+                  key: postgres-password
           volumeMounts:
             {{- if .Values.backend.postgresCertMountEnabled }}
             - name: postgres-ca
