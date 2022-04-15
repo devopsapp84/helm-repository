@@ -1,6 +1,6 @@
 {{- if (and (.Capabilities.APIVersions.Has "cert-manager.io/v1") .Values.issuer.email )  -}}
 {{/*  Only install issuer if it doesn't already exist in the cluster */}}
-{{- if not ( lookup "cert-manager.io/v1alpha2" "ClusterIssuer"  "" .Values.issuer.clusterIssuer  ) }}
+{{- if not ( lookup "cert-manager.io/v1" "ClusterIssuer"  "" .Values.issuer.clusterIssuer  ) }}
 apiVersion: cert-manager.io/v1alpha2
 kind: ClusterIssuer
 metadata:
