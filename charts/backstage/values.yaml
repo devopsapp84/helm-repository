@@ -78,6 +78,12 @@ global:
 
 postgresql:
   enabled: true
+
+  ### Do not remove it! Very important for postgreSQL 11. Lack of this values will cause nil pointer error during helm installation!
+  service:
+    port: 5432
+  ###
+  
   nameOverride: postgresql
   tls:
     enabled: true

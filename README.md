@@ -1,2 +1,2 @@
 # helm-repository
-Github Helm Repository
+Self hosted helm repository for backstage
