@@ -2,16 +2,6 @@
 
 This folder contains Helm charts that can easily create a Kubernetes deployment of a demo Backstage app.
 
-### Pre-requisites
-
-These charts depend on the `nginx-ingress` controller being present in the cluster. If it's not already installed you
-can run:
-
-```shell
-helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
-helm install nginx-ingress ingress-nginx/ingress-nginx
-```
-
 ### Installing the charts
 
 After choosing a DNS name where backstage will be hosted create a yaml file for your custom configuration.
