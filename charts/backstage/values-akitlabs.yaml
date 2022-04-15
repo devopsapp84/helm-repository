@@ -23,10 +23,10 @@ issuer:
 frontend:
   enabled: true
   image:
-    repository: januszkujawa84/backstage-frontend
-    tag: '0.1'
+    repository: ghcr.io/devopsapp84/backstage-k8s-poc/backstage-frontend-dev
+    tag: 'main'
 
 backend:
   image:
-    repository: januszkujawa84/backstage-backend
-    tag: '0.1'
+    repository: ghcr.io/devopsapp84/backstage-k8s-poc/backstage-backend-dev
+    tag: 'main'
