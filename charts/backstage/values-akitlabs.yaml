@@ -19,7 +19,6 @@ issuer:
 #auth:
 #  githubToken:
 
-
 frontend:
   enabled: true
   image:
