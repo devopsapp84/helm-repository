@@ -21,7 +21,7 @@ spec:
           valueFrom:
             secretKeyRef:
               name: {{ include "backend.postgresql.passwordSecret" .}}
-              key: postgresql-password
+              key: postgres-password
         - name: PG_DBNAME
           value: {{ .Values.appConfig.backend.database.connection.database }}
       command:
