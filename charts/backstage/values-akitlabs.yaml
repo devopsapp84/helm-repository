@@ -13,7 +13,7 @@ appConfig:
     requestUrl: 'https://backstage.akitlabs.com/api/techdocs'
 
 issuer:
-  email:
+  email: janusz.kujawa@gmail.com
   clusterIssuer: 'selfsigned-cluster-issuer'
 
 #auth:
