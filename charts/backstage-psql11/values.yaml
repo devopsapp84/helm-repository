@@ -79,6 +79,8 @@ global:
 postgresql:
   enabled: true
   nameOverride: postgresql
+  service:
+    port: ''
   tls:
     enabled: true
     certificatesSecret: backstage-postgresql-certs
