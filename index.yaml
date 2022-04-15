@@ -3,6 +3,31 @@ entries:
   backstage:
   - apiVersion: v2
     appVersion: v0.1.1-alpha.23
+    created: "2022-04-15T15:09:01.231598482Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.16.2
+    description: A Helm chart for Backstage
+    digest: 4282db6676d010440d21de7e5d4a94631bc7eb73b1eabbbbc8a04ac9b5d67ae2
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    name: backstage
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-0.0.8/backstage-0.0.8.tgz
+    version: 0.0.8
+  - apiVersion: v2
+    appVersion: v0.1.1-alpha.23
     created: "2022-04-15T14:54:51.648286743Z"
     dependencies:
     - condition: postgresql.enabled
@@ -202,7 +227,58 @@ entries:
     urls:
     - https://github.com/devopsapp84/helm-repository/releases/download/backstage-old-0.1.3/backstage-old-0.1.3.tgz
     version: 0.1.3
+  backstage-psql9:
+  - apiVersion: v2
+    appVersion: v0.1.1-alpha.23
+    created: "2022-04-15T15:09:02.175310669Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.8.12
+    description: A Helm chart for Backstage
+    digest: 534d516517a07002fba28fa61ffc6f2de370124018b6b042d0df55ca3a403211
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    name: backstage-psql9
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-psql9-0.0.1/backstage-psql9-0.0.1.tgz
+    version: 0.0.1
   backstage-psql10:
+  - apiVersion: v2
+    appVersion: v0.1.1-alpha.23
+    created: "2022-04-15T15:09:01.49097436Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.16.2
+    description: A Helm chart for Backstage
+    digest: 24bf44ef43c01415f8747eb1fb31a056dcca2b152e1f0b66a6c9edfc470a7efe
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    name: backstage-psql10
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-psql10-0.0.2/backstage-psql10-0.0.2.tgz
+    version: 0.0.2
   - apiVersion: v2
     appVersion: v0.1.1-alpha.23
     created: "2022-04-15T14:54:51.863300577Z"
@@ -231,6 +307,31 @@ entries:
   backstage-psql11:
   - apiVersion: v2
     appVersion: v0.1.1-alpha.23
+    created: "2022-04-15T15:09:01.743916315Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.19
+    description: A Helm chart for Backstage
+    digest: 8a348610ef2613941b77d3ab90ea7a8d7321f6176ee88d7ca8fd93b3f4120727
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    name: backstage-psql11
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-psql11-0.0.2/backstage-psql11-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: v0.1.1-alpha.23
     created: "2022-04-15T14:54:52.10984305Z"
     dependencies:
     - condition: postgresql.enabled
@@ -254,4 +355,4 @@ entries:
     urls:
     - https://github.com/devopsapp84/helm-repository/releases/download/backstage-psql11-0.0.1/backstage-psql11-0.0.1.tgz
     version: 0.0.1
-generated: "2022-04-15T14:54:52.109955755Z"
+generated: "2022-04-15T15:09:02.17536987Z"
