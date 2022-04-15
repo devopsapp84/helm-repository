@@ -52,10 +52,10 @@ lighthouse:
       memory: 256Mi
   database:
     connection:
-      port: 5432
-      host: backstage-postgresql
-      user: backend-user
-      password: init1234
+      port:
+      host:
+      user:
+      password:
       database: lighthouse_audit_service
     pathToDatabaseCa:
 
@@ -78,8 +78,6 @@ global:
 
 postgresql:
   enabled: true
-  service:
-    port: 5432
   nameOverride: postgresql
   tls:
     enabled: true
@@ -105,10 +103,10 @@ appConfig:
       client: pg
       connection:
         database: backstage_plugin_catalog
-        host: backstage-postgresql
-        user: backend-user
-        port: 5432
-        password: init1234
+        host:
+        user:
+        port:
+        password:
         ssl:
           rejectUnauthorized: false
           ca:
