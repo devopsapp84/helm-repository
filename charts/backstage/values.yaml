@@ -64,7 +64,7 @@ fullnameOverride: ''
 
 ingress:
   annotations:
-    kubernetes.io/ingress.class: istio
+    kubernetes.io/ingress.class: nginx
 
 issuer:
   email:
@@ -78,11 +78,8 @@ global:
 
 postgresql:
   enabled: true
-  
-  ### Do not remove it! Very important for postgreSQL 11. Lack of this values will cause nil pointer error during helm installation!
   service:
     port: 5432
-  ###
   nameOverride: postgresql
   tls:
     enabled: true
