@@ -3,6 +3,31 @@ entries:
   backstage:
   - apiVersion: v2
     appVersion: v0.1.1-alpha.23
+    created: "2022-04-15T14:54:51.648286743Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.16.2
+    description: A Helm chart for Backstage
+    digest: d89db7c2ba7affe6372e4f199fe9da6a7c2c6ac0ea60bdcac248749dd00102dd
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    name: backstage
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-0.0.7/backstage-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: v0.1.1-alpha.23
     created: "2022-04-15T13:27:32.693708906Z"
     dependencies:
     - condition: postgresql.enabled
@@ -177,4 +202,56 @@ entries:
     urls:
     - https://github.com/devopsapp84/helm-repository/releases/download/backstage-old-0.1.3/backstage-old-0.1.3.tgz
     version: 0.1.3
-generated: "2022-04-15T13:27:32.693871108Z"
+  backstage-psql10:
+  - apiVersion: v2
+    appVersion: v0.1.1-alpha.23
+    created: "2022-04-15T14:54:51.863300577Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.16.2
+    description: A Helm chart for Backstage
+    digest: a8c239f5338760e2a92fb5ab642cf422a8efb82e656d8314513c5e8fee78d1d3
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    name: backstage-psql10
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-psql10-0.0.1/backstage-psql10-0.0.1.tgz
+    version: 0.0.1
+  backstage-psql11:
+  - apiVersion: v2
+    appVersion: v0.1.1-alpha.23
+    created: "2022-04-15T14:54:52.10984305Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.19
+    description: A Helm chart for Backstage
+    digest: 86072897878a2a18473c73a7042cda8a6e3addf0c85d547d1d945f2ef7993fde
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    name: backstage-psql11
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-psql11-0.0.1/backstage-psql11-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-04-15T14:54:52.109955755Z"
