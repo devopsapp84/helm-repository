@@ -355,4 +355,53 @@ entries:
     urls:
     - https://github.com/devopsapp84/helm-repository/releases/download/backstage-psql11-0.0.1/backstage-psql11-0.0.1.tgz
     version: 0.0.1
-generated: "2022-04-15T15:09:02.17536987Z"
+  base:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2022-04-21T12:50:11.411139066Z"
+    description: Helm chart for deploying Istio cluster resources and CRDs
+    digest: 7150ff49e7d18e0d78fff89430b457b38d0a9e4c2b9bb8442fa01c2a6b0b53b7
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    name: base
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/base-1.0.0/base-1.0.0.tgz
+    version: 1.0.0
+  istio-ingress:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2022-04-21T12:50:11.605386032Z"
+    description: Helm chart for deploying Istio gateways
+    digest: 73259d7668ed075e7762a26da11a5b313ef8d79d67a06fd3f4556a3ae50d9780
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - ingressgateway
+    - gateways
+    name: istio-ingress
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/istio-ingress-1.0.0/istio-ingress-1.0.0.tgz
+    version: 1.0.0
+  istiod:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2022-04-21T12:50:11.814679127Z"
+    description: Helm chart for istio control plane
+    digest: 87df01ce88c576ac580aa9b683a6593c00ee205e5ad34b726446743876cd1438
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - istiod
+    - istio-discovery
+    name: istiod
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/istiod-1.0.0/istiod-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-04-21T12:50:11.814717528Z"
