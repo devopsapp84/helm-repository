@@ -357,6 +357,20 @@ entries:
     version: 0.0.1
   base:
   - apiVersion: v1
+    appVersion: 1.13.3
+    created: "2022-04-21T12:54:09.393502415Z"
+    description: Helm chart for deploying Istio cluster resources and CRDs
+    digest: 52a72ad0403d5fe87f071f1d469c1273f6cc3552aa7d1ab5e36a0dcb89241627
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    name: base
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/base-1.13.3/base-1.13.3.tgz
+    version: 1.13.3
+  - apiVersion: v1
     appVersion: 1.0.0
     created: "2022-04-21T12:50:11.411139066Z"
     description: Helm chart for deploying Istio cluster resources and CRDs
@@ -371,6 +385,22 @@ entries:
     - https://github.com/devopsapp84/helm-repository/releases/download/base-1.0.0/base-1.0.0.tgz
     version: 1.0.0
   istio-ingress:
+  - apiVersion: v1
+    appVersion: 1.13.3
+    created: "2022-04-21T12:54:09.607560763Z"
+    description: Helm chart for deploying Istio gateways
+    digest: 81c978f36c7bcbd60e4fc6394cbf58713f96542c6f75b357780ff4fd9f3d2163
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - ingressgateway
+    - gateways
+    name: istio-ingress
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/istio-ingress-1.13.3/istio-ingress-1.13.3.tgz
+    version: 1.13.3
   - apiVersion: v1
     appVersion: 1.0.0
     created: "2022-04-21T12:50:11.605386032Z"
@@ -389,6 +419,22 @@ entries:
     version: 1.0.0
   istiod:
   - apiVersion: v1
+    appVersion: 1.13.3
+    created: "2022-04-21T12:54:09.803546163Z"
+    description: Helm chart for istio control plane
+    digest: aa55e3f4680b328308314c8c54a5078c8a25ee613adcf7e61aebfabe7dbffc2c
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - istiod
+    - istio-discovery
+    name: istiod
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/istiod-1.13.3/istiod-1.13.3.tgz
+    version: 1.13.3
+  - apiVersion: v1
     appVersion: 1.0.0
     created: "2022-04-21T12:50:11.814679127Z"
     description: Helm chart for istio control plane
@@ -404,4 +450,4 @@ entries:
     urls:
     - https://github.com/devopsapp84/helm-repository/releases/download/istiod-1.0.0/istiod-1.0.0.tgz
     version: 1.0.0
-generated: "2022-04-21T12:50:11.814717528Z"
+generated: "2022-04-21T12:54:09.803603063Z"
