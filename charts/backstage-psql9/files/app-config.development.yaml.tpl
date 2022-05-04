@@ -16,30 +16,40 @@ backend:
 catalog:
 {{- if .Values.backend.demoData }}
   locations:
-   
-    # User authentication
-    - type: github
-      target: https://github.com/devopsapp84/backstage/blob/main/packages/catalog-model/devopsapp84/users/org.yaml
-
+  
     # Backstage example components
-    - type: github
+    - type: url
       target: https://github.com/devopsapp84/backstage/blob/main/packages/catalog-model/examples/all-components.yaml
 
-    # Example component for github-actions
-    - type: github
-      target: https://github.com/devopsapp84/backstage/blob/main/plugins/github-actions/examples/sample.yaml
-
-    # Example component for techdocs
-    - type: github
-      target: https://github.com/devopsapp84/backstage/blob/main/plugins/techdocs-backend/examples/documented-component/documented-component.yaml
+    # Backstage example systems
+    - type: url
+      target: https://github.com/devopsapp84/backstage/blob/main/packages/catalog-model/examples/all-systems.yaml
 
     # Backstage example APIs
-    - type: github
+    - type: url
       target: https://github.com/devopsapp84/backstage/blob/main/packages/catalog-model/examples/all-apis.yaml
-      
+
+    # Backstage example resources
+    - type: url
+      target: https://github.com/devopsapp84/backstage/blob/main/packages/catalog-model/examples/all-resources.yaml
+
+    # Backstage example organization groups
+    - type: url
+      target: https://github.com/devopsapp84/backstage/blob/main/packages/catalog-model/examples/acme/org.yaml
+
     # Backstage example templates
-    - type: github
-      target: https://github.com/devopsapp84/backstage/blob/main/plugins/scaffolder-backend/sample-templates/all-templates.yaml
+    - type: url
+      target: https://github.com/devopsapp84/software-templates/blob/main/scaffolder-templates/react-ssr-template/template.yaml
+      rules:
+    
+    - type: url
+      target: https://github.com/devopsapp84/software-templates/blob/main/scaffolder-templates/springboot-grpc-template/template.yaml
+      rules:
+   
+    - type: url
+      target: https://github.com/devopsapp84/software-templates/blob/main/scaffolder-templates/docs-template/template.yaml
+      rules:
+      
 
 {{- else }}
   locations: []
