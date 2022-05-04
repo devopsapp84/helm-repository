@@ -1,6 +1,6 @@
 apiVersion: v2
-name: backstage-psql9-new
-description: A Helm chart for Backstage with PostgreSQL 9.X (self hosted)
+name: backstage-psql9
+description: A Helm chart for Backstage
 type: application
 
 # This is the chart version. This version number should be incremented each time you make changes
@@ -30,3 +30,4 @@ maintainers:
     url: https://roadie.io
   - name: Janusz Kujawa
     email: janusz.kujawa@gmail.com
+  

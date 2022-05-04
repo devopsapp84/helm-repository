@@ -6,8 +6,8 @@ frontend:
   enabled: false
   replicaCount: 1
   image:
-    repository: januszkujawa84/backstage-frontend
-    tag: dev
+    repository: martinaif/backstage-k8s-demo-frontend
+    tag: test1
     pullPolicy: IfNotPresent
   containerPort: 80
   serviceType: ClusterIP
@@ -23,8 +23,8 @@ backend:
   demoData: true
   replicaCount: 1
   image:
-    repository: januszkujawa84/backstage-backend
-    tag: dev
+    repository: martinaif/backstage-k8s-demo-backend
+    tag: 20210423T1550
     pullPolicy: IfNotPresent
   containerPort: 7007
   serviceType: ClusterIP
@@ -103,10 +103,10 @@ appConfig:
       client: pg
       connection:
         database: backstage_plugin_catalog
-        host: backstage-postgresql
-        user: backstage
-        port: 5432
-        password: init1234
+        host:
+        user:
+        port:
+        password:
         ssl:
           rejectUnauthorized: false
           ca:
