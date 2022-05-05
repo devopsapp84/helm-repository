@@ -1,6 +1,6 @@
 apiVersion: v2
 name: backstage-psql11
-description: Backstage with PostgreSQL 11.X (self hosted)
+description: Backstage with PostgreSQL 11.X (self hosted DevopsApp84) 
 type: application
 
 # This is the chart version. This version number should be incremented each time you make changes
