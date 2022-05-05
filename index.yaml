@@ -1,5 +1,33 @@
 apiVersion: v1
 entries:
+  backstage-psql9:
+  - apiVersion: v2
+    appVersion: v0.1.1-alpha.23
+    created: "2022-05-05T08:32:09.151473111Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.8.12
+    description: A Helm chart for Backstage with PostgreSQL 9.X (self hosted)
+    digest: c1c05a4c094a7543951523a4646d86d968feb510115f09cb88725c793a935f1b
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+    name: backstage-psql9
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-psql9-0.0.1/backstage-psql9-0.0.1.tgz
+    version: 0.0.1
   backstage-psql9-new:
   - apiVersion: v2
     appVersion: v0.1.1-alpha.23
@@ -169,4 +197,4 @@ entries:
     urls:
     - https://github.com/devopsapp84/helm-repository/releases/download/istiod-1.13.3/istiod-1.13.3.tgz
     version: 1.13.3
-generated: "2022-05-05T08:30:18.939319869Z"
+generated: "2022-05-05T08:32:09.151482611Z"
