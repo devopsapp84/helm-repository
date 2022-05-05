@@ -5,7 +5,7 @@ name: istio-ingress
 version: 1.13.3
 appVersion: 1.13.3
 tillerVersion: ">=2.7.2"
-description: Helm chart for deploying Istio gateways - selfhosted
+description: Helm chart for deploying Istio gateways
 keywords:
   - istio
   - ingressgateway
