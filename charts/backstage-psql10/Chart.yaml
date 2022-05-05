@@ -1,6 +1,6 @@
 apiVersion: v2
 name: backstage-psql10
-description: A Helm chart for Backstage
+description: Backstage with PostgreSQL 10.X (self hosted)
 type: application
 
 # This is the chart version. This version number should be incremented each time you make changes
