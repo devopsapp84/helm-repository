@@ -16,41 +16,21 @@ backend:
 catalog:
 {{- if .Values.backend.demoData }}
   locations:
-  
     # Backstage example components
-    - type: url
-      target: https://github.com/devopsapp84/backstage/blob/main/packages/catalog-model/examples/all-components.yaml
-
-    # Backstage example systems
-    - type: url
-      target: https://github.com/devopsapp84/backstage/blob/main/packages/catalog-model/examples/all-systems.yaml
-
+    - type: github
+      target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all-components.yaml
+    # Example component for github-actions
+    - type: github
+      target: https://github.com/backstage/backstage/blob/master/plugins/github-actions/examples/sample.yaml
+    # Example component for techdocs
+    - type: github
+      target: https://github.com/backstage/backstage/blob/master/plugins/techdocs-backend/examples/documented-component/documented-component.yaml
     # Backstage example APIs
-    - type: url
-      target: https://github.com/devopsapp84/backstage/blob/main/packages/catalog-model/examples/all-apis.yaml
-
-    # Backstage example resources
-    - type: url
-      target: https://github.com/devopsapp84/backstage/blob/main/packages/catalog-model/examples/all-resources.yaml
-
-    # Backstage example organization groups
-    - type: url
-      target: https://github.com/devopsapp84/backstage/blob/main/packages/catalog-model/examples/acme/org.yaml
-
+    - type: github
+      target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all-apis.yaml
     # Backstage example templates
-    - type: url
-      target: https://github.com/devopsapp84/software-templates/blob/main/scaffolder-templates/react-ssr-template/template.yaml
-      rules:
-    
-    - type: url
-      target: https://github.com/devopsapp84/software-templates/blob/main/scaffolder-templates/springboot-grpc-template/template.yaml
-      rules:
-   
-    - type: url
-      target: https://github.com/devopsapp84/software-templates/blob/main/scaffolder-templates/docs-template/template.yaml
-      rules:
-      
-
+    - type: github
+      target: https://github.com/backstage/backstage/blob/master/plugins/scaffolder-backend/sample-templates/all-templates.yaml
 {{- else }}
   locations: []
 {{- end }}
