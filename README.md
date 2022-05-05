@@ -13,6 +13,12 @@ Once Helm has been set up correctly, add the repo as follows:
 helm repo add selfrepo https://devopsapp84.github.io/helm-repository
 ```
 
+Refresh packages within index yaml:
+
+```console
+helm repo update selfrepo
+```
+
 If you had already added this repo earlier, run `helm repo update` to retrieve
 the latest versions of the packages. You can then run `helm search repo
 test` to see the charts.
