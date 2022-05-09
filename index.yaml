@@ -3,6 +3,34 @@ entries:
   backstage-base:
   - apiVersion: v2
     appVersion: v1.1.1
+    created: "2022-05-09T16:22:58.296256288Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.28
+    description: A Helm chart for Backstage base empty install
+    digest: 50b93dc946e083883fe2c53f36c2ecb16314d9440264a0e4ef30a438d298a522
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+      url: https://github.com/johnkk84
+    name: backstage-base
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-base-0.0.2/backstage-base-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: v1.1.1
     created: "2022-05-09T13:17:20.290707979Z"
     dependencies:
     - condition: postgresql.enabled
@@ -30,6 +58,34 @@ entries:
     - https://github.com/devopsapp84/helm-repository/releases/download/backstage-base-0.0.1/backstage-base-0.0.1.tgz
     version: 0.0.1
   backstage-dev:
+  - apiVersion: v2
+    appVersion: v1.1.1
+    created: "2022-05-09T16:22:58.443310396Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.28
+    description: A Helm chart for Backstage
+    digest: 1011c0faa276451c73ab395ed0a7e7866b8325f5539583629031b6763c32aa6c
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+      url: https://github.com/johnkk84
+    name: backstage-dev
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-dev-0.0.2/backstage-dev-0.0.2.tgz
+    version: 0.0.2
   - apiVersion: v2
     appVersion: v1.1.1
     created: "2022-05-09T13:17:20.519170583Z"
@@ -116,4 +172,4 @@ entries:
     urls:
     - https://github.com/devopsapp84/helm-repository/releases/download/istiod-1.13.3/istiod-1.13.3.tgz
     version: 1.13.3
-generated: "2022-05-09T13:17:21.156590573Z"
+generated: "2022-05-09T16:22:58.443327696Z"
