@@ -1,0 +1,119 @@
+apiVersion: v1
+entries:
+  backstage-base:
+  - apiVersion: v2
+    appVersion: v1.1.1
+    created: "2022-05-09T13:17:20.290707979Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.28
+    description: A Helm chart for Backstage base empty install
+    digest: 77e9a2c4057fc1ee0b5aea001644a59371e94140bffc5539a09070dec62da5ef
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+      url: https://github.com/johnkk84
+    name: backstage-base
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-base-0.0.1/backstage-base-0.0.1.tgz
+    version: 0.0.1
+  backstage-dev:
+  - apiVersion: v2
+    appVersion: v1.1.1
+    created: "2022-05-09T13:17:20.519170583Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.28
+    description: A Helm chart for Backstage
+    digest: 5d1a9646b507f62f069d1818838bc404ae26fc357b9163f344060af4e6ae78b9
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+      url: https://github.com/johnkk84
+    name: backstage-dev
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-dev-0.0.1/backstage-dev-0.0.1.tgz
+    version: 0.0.1
+  base:
+  - apiVersion: v1
+    appVersion: 1.13.3
+    created: "2022-05-09T13:17:20.747751087Z"
+    description: Helm chart for deploying Istio cluster resources and CRDs (selfrepo)
+    digest: e4ed8454baa03faf85ad7806c11fb008c601173be99d22440539c2c4d3cab6a1
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    maintainers:
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+    name: base
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/base-1.13.3/base-1.13.3.tgz
+    version: 1.13.3
+  istio-ingress:
+  - apiVersion: v1
+    appVersion: 1.13.3
+    created: "2022-05-09T13:17:20.960214884Z"
+    description: Helm chart for deploying Istio gateways (selfrepo)
+    digest: 7302352857159cadad85ebb60c6e46c27d17938f90e563720db267519785cf7d
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - ingressgateway
+    - gateways
+    maintainers:
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+    name: istio-ingress
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/istio-ingress-1.13.3/istio-ingress-1.13.3.tgz
+    version: 1.13.3
+  istiod:
+  - apiVersion: v1
+    appVersion: 1.13.3
+    created: "2022-05-09T13:17:21.156555873Z"
+    description: Helm chart for istio control plane (selfrepo)
+    digest: a296a5fd41c9a09869978ee9b24ce3d9e80eb4e82fc14cdf0f93c8b43507877a
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - istiod
+    - istio-discovery
+    maintainers:
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+    name: istiod
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/istiod-1.13.3/istiod-1.13.3.tgz
+    version: 1.13.3
+generated: "2022-05-09T13:17:21.156590573Z"
