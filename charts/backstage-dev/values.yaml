@@ -3,13 +3,13 @@
 # Declare variables to be passed into your templates.
 
 frontend:
-  enabled: false
+  enabled: true
   replicaCount: 1
   image:
     repository: januszkujawa84/backstage-frontend
     tag: dev
     pullPolicy: IfNotPresent
-  containerPort: 80
+  containerPort: 3000
   serviceType: ClusterIP
   resources:
     requests:
@@ -19,7 +19,7 @@ frontend:
 
 backend:
   enabled: true
-  nodeEnv: development
+  #nodeEnv: development
   demoData: true
   replicaCount: 1
   image:
@@ -62,13 +62,9 @@ lighthouse:
 nameOverride: ''
 fullnameOverride: ''
 
-ingress:
-  annotations:
-    kubernetes.io/ingress.class: nginx
-
 issuer:
-  email:
-  clusterIssuer: 'letsencrypt-staging'
+  email: ''
+  clusterIssuer: ''
 
 global:
   postgresql:
@@ -90,35 +86,36 @@ postgresql:
 
 appConfig:
   app:
-    baseUrl: https://demo.example.com
-    title: Backstage
+    baseUrl: https://backstage.172.25.0.3.nip.io
+    title: Backstage Dev
+    ghorg: devopsapp84
     googleAnalyticsTrackingId:
   backend:
-    baseUrl: https://demo.example.com
+    baseUrl: https://backstage.172.25.0.3.nip.io
     listen:
       port: 7007
     cors:
-      origin: https://demo.example.com
+      origin: https://backstage.172.25.0.3.nip.io
     database:
       client: pg
       connection:
         database: backstage_plugin_catalog
-        host: backstage-postgresql
-        user: backstage
-        port: 5432
-        password: init1234
+        host:
+        user:
+        port:
+        password:
         ssl:
           rejectUnauthorized: false
           ca:
   sentry:
-    organization: example-org-name
+    organization: backstage-dev
   techdocs:
-    storageUrl: https://demo.example.com/api/techdocs/static/docs
-    requestUrl: https://demo.example.com/api/techdocs
+    storageUrl: https://backstage.172.25.0.3.nip.io/api/techdocs/static/docs
+    requestUrl: https://backstage.172.25.0.3.nip.io/api/techdocs
   lighthouse:
-    baseUrl: https://demo.example.com/lighthouse-api
+    baseUrl: https://backstage.172.25.0.3.nip.io/lighthouse-api
   rollbar:
-    organization: example-org-name
+    organization: backstage-dev
 
   # Auth config has recently moved into the app config file in upstream Backstage. However,
   # most of this config simply mandates that items like the client id and client secret should
@@ -179,7 +176,7 @@ auth:
     clientId: a
     clientSecret: a
   github:
-    clientId: c
+    clientId:  c
     clientSecret: c
   gitlab:
     clientId: b
@@ -210,7 +207,7 @@ auth:
   # This is a 'Personal Access Token'
   circleciAuthToken: r
   # Used by the scaffolder to create GitHub repos. Must have 'repo' scope.
-  githubToken: g
+  githubToken: 
   gitlabToken: g
   newRelicRestApiKey: r
   travisciAuthToken: fake-travis-ci-auth-token

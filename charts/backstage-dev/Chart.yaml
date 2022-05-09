@@ -1,6 +1,6 @@
 apiVersion: v2
-name: backstage-psql11
-description: Backstage with PostgreSQL 11.X (self hosted DevopsApp84) 
+name: backstage-dev
+description: A Helm chart for Backstage
 type: application
 
 # This is the chart version. This version number should be incremented each time you make changes
@@ -9,7 +9,7 @@ version: 0.0.1
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application.
-appVersion: v0.1.1-alpha.23
+appVersion: v1.1.1
 
 sources:
   - https://github.com/backstage/backstage
@@ -18,7 +18,7 @@ sources:
 dependencies:
   - name: postgresql
     condition: postgresql.enabled
-    version: 11.1.19
+    version: 11.1.28
     repository: https://charts.bitnami.com/bitnami
 
 maintainers:
@@ -30,3 +30,4 @@ maintainers:
     url: https://roadie.io
   - name: Janusz Kujawa
     email: janusz.kujawa@gmail.com
+    url: https://github.com/johnkk84
