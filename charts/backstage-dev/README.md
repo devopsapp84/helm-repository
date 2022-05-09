@@ -1,4 +1,4 @@
-# Backstage dev helm charts
+# Backstage development helm charts
 
 This folder contains Helm charts that can easily create a Kubernetes deployment of a demo Backstage app.
 

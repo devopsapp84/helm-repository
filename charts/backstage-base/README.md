@@ -1,4 +1,4 @@
-# Backstage dev helm charts
+# Backstage production ready helm charts
 
 This folder contains Helm charts that can easily create a Kubernetes deployment of a demo Backstage app.
 
@@ -13,7 +13,7 @@ After choosing a DNS name where backstage will be hosted create a yaml file for 
 appConfig:
   app:
     baseUrl: https://backstage.<your k3d lb ip>.nip.io
-    title: Backstage Dev K8s
+    title: Backstage Prod K8s
   backend:
     baseUrl: https://backstage.<your k3d lb ip>.nip.io
     cors:
@@ -29,7 +29,7 @@ Then use it to run:
 
 ```shell
 git clone https://github.com/devopsapp84/helm-repository
-cd charts/backstage-dev
+cd charts/backstage-base
 helm dependency update
 helm install -f values-override.yaml backstage .
 ```
