@@ -60,6 +60,34 @@ entries:
   backstage-dev:
   - apiVersion: v2
     appVersion: v1.1.1
+    created: "2022-05-09T19:48:23.352506335Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.28
+    description: A Helm chart for Backstage
+    digest: 87770e3d71e2aa3c94aa62897d176fc2bb65340d80246e66e7c37989d474e67f
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+      url: https://github.com/johnkk84
+    name: backstage-dev
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-dev-0.0.3/backstage-dev-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: v1.1.1
     created: "2022-05-09T16:22:58.443310396Z"
     dependencies:
     - condition: postgresql.enabled
@@ -172,4 +200,4 @@ entries:
     urls:
     - https://github.com/devopsapp84/helm-repository/releases/download/istiod-1.13.3/istiod-1.13.3.tgz
     version: 1.13.3
-generated: "2022-05-09T16:22:58.443327696Z"
+generated: "2022-05-09T19:48:23.352526635Z"
