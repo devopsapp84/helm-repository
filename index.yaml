@@ -160,6 +160,24 @@ entries:
     urls:
     - https://github.com/devopsapp84/helm-repository/releases/download/base-1.13.3/base-1.13.3.tgz
     version: 1.13.3
+  istio-base:
+  - apiVersion: v1
+    appVersion: 1.13.3
+    created: "2022-05-10T11:16:07.146580446Z"
+    description: Helm chart for deploying Istio cluster resources and CRDs (selfrepo)
+    digest: 33aeb8219a7169c5981d946f6748dae33e018f7c300143acc63e15e31bb8b480
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    maintainers:
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+    name: istio-base
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/istio-base-1.13.3/istio-base-1.13.3.tgz
+    version: 1.13.3
   istio-ingress:
   - apiVersion: v1
     appVersion: 1.13.3
@@ -180,6 +198,22 @@ entries:
     urls:
     - https://github.com/devopsapp84/helm-repository/releases/download/istio-ingress-1.13.3/istio-ingress-1.13.3.tgz
     version: 1.13.3
+  istio-operator:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2022-05-10T11:16:07.426466309Z"
+    description: Helm chart for deploying Istio operator
+    digest: 0ac7276cdaa8232851f6bee52c03a95ecb0bc999d47321131eabaaf040ea49bb
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - operator
+    name: istio-operator
+    sources:
+    - https://github.com/istio/istio/tree/master/operator
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/istio-operator-1.0.0/istio-operator-1.0.0.tgz
+    version: 1.0.0
   istiod:
   - apiVersion: v1
     appVersion: 1.13.3
@@ -200,4 +234,4 @@ entries:
     urls:
     - https://github.com/devopsapp84/helm-repository/releases/download/istiod-1.13.3/istiod-1.13.3.tgz
     version: 1.13.3
-generated: "2022-05-09T19:48:23.352526635Z"
+generated: "2022-05-10T11:16:07.606925104Z"
