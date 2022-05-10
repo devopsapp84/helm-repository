@@ -1,0 +1,115 @@
+apiVersion: v1
+entries:
+  backstage-base:
+  - apiVersion: v2
+    appVersion: v1.1.1
+    created: "2022-05-10T11:20:43.536909929Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.28
+    description: A Helm chart for Backstage base empty install
+    digest: 19ec186ed5121e98ef13b34a86024cc08eca9fd35967daff0c1fd73346074dc3
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+      url: https://github.com/johnkk84
+    name: backstage-base
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-base-0.0.1/backstage-base-0.0.1.tgz
+    version: 0.0.1
+  backstage-dev:
+  - apiVersion: v2
+    appVersion: v1.1.1
+    created: "2022-05-10T11:20:43.711163391Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.28
+    description: A Helm chart for Backstage
+    digest: 67fffdf0a9f54b25f33f16cdd3b7eaa201bb8102ee2e02662d9c527af58a1ad8
+    maintainers:
+    - email: martina@roadie.io
+      name: Martina Iglesias Fernández
+      url: https://roadie.io
+    - email: david@roadie.io
+      name: David Tuite
+      url: https://roadie.io
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+      url: https://github.com/johnkk84
+    name: backstage-dev
+    sources:
+    - https://github.com/backstage/backstage
+    - https://github.com/spotify/lighthouse-audit-service
+    type: application
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/backstage-dev-0.0.1/backstage-dev-0.0.1.tgz
+    version: 0.0.1
+  istio-base:
+  - apiVersion: v1
+    appVersion: 1.13.3
+    created: "2022-05-10T11:20:43.911080348Z"
+    description: Helm chart for deploying Istio cluster resources and CRDs (selfrepo)
+    digest: dd6f9086258cbff4ff0be7e5984a282906a0454e6b7b5fff8c20c835d61bae9c
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    maintainers:
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+    name: istio-base
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/istio-base-1.13.3/istio-base-1.13.3.tgz
+    version: 1.13.3
+  istio-operator:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2022-05-10T11:20:44.120118998Z"
+    description: Helm chart for deploying Istio operator
+    digest: e1e34e4f405c4471635633477029fa3161dfe9ae72d29531ad336c98fc7ce977
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - operator
+    name: istio-operator
+    sources:
+    - https://github.com/istio/istio/tree/master/operator
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/istio-operator-1.0.0/istio-operator-1.0.0.tgz
+    version: 1.0.0
+  istiod:
+  - apiVersion: v1
+    appVersion: 1.13.3
+    created: "2022-05-10T11:20:44.298309559Z"
+    description: Helm chart for istio control plane (selfrepo)
+    digest: a3b3588127431b4676dd699d880781de6fbcf86a59b8eb686651be5151a0ec95
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - istiod
+    - istio-discovery
+    maintainers:
+    - email: janusz.kujawa@gmail.com
+      name: Janusz Kujawa
+    name: istiod
+    sources:
+    - http://github.com/istio/istio
+    urls:
+    - https://github.com/devopsapp84/helm-repository/releases/download/istiod-1.13.3/istiod-1.13.3.tgz
+    version: 1.13.3
+generated: "2022-05-10T11:20:44.298315759Z"
